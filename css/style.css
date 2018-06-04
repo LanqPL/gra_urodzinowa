@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=BioRhyme+Expanded');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+
+title{
+	font-family: 'BioRhyme Expanded', serif;
+}
+
+body{
+	margin:0;
+	overflow: hidden;
+}
+
+#strona{
+	width: auto;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url("../zdjecia/tlo.jpg");
+}
+
+#name{
+	padding-top: 30px;
+	padding-left: 48%;
+	margin: 0;
+	font-family: 'Bowlby One SC', cursive;
+	font-size: 30px;
+	color: rgb(169,69,16);
+}
+
+#plotno{
+	width: 800px;
+	height: 480px;
+	background-color:rgb(0,0,0);
+	margin-left: 22%;
+	margin-bottom: 10%;
+	margin-top: 10px;
+}
