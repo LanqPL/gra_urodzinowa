@@ -35,11 +35,14 @@ body{
 	background-color:rgb(255,255,255);
 	margin-left: 22%;
 	margin-bottom: 10%;
+	padding: 0;
 }
 
 iframe{
 	width: 800px;
 	height: 480px;
+	margin: 0;
+	padding: 0;
 }
 
 #plotno{
@@ -62,7 +65,7 @@ div#glowna{
 }
 
 div#menu{
-	float: right;
+	float: bottom;
 	background-color: rgba(105,105,105,0.5);
 }
 
