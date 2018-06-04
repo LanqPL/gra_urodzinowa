@@ -1,2 +1,1 @@
-var zmienna = '<div id="glowna"><div id="menu"><div class="dprzycisk"><button class="przycisk">GRAJ</button></div><br><div class="dprzycisk"><button class="przycisk">JAK GRAĆ</button></div><br><div class="dprzycisk"><button class="przycisk">O AUTORZE</button></div></div></div>';
-$("#plotno").html(zmienna);
+$(document).ready(function(){$("#obszar").html("<iframe src='./html/menu.html'></iframe>");});

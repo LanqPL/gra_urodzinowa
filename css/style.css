@@ -13,6 +13,7 @@ body{
 #strona{
 	width: auto;
 	height: auto;
+	padding-bottom: 10%;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
@@ -26,6 +27,19 @@ body{
 	font-family: 'Bowlby One SC', cursive;
 	font-size: 30px;
 	color: rgb(169,69,16);
+}
+
+#obszar{
+	width: 800px;
+	height: 480px;
+	background-color:rgb(255,255,255);
+	margin-left: 22%;
+	margin-bottom: 10%;
+}
+
+iframe{
+	width: 800px;
+	height: 480px;
 }
 
 #plotno{
