@@ -8,37 +8,7 @@
 	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="./js/phaser.min.js"></script>
 	<script type="text/javascript" src="./js/sterowanie.js"></script>
-	<script type="text/javascript">
-		
-
-
-			function graj(){
-				$("#glowna").children().remove();
-				$("#glowna").html('<canvas></canvas>');
-			}
-
-			function jak_grac(){
-				$("#glowna").children().remove();
-				$("#glowna").html('<footer><div class="dprzycisk" id="wstecz" onclick="wstecz()"><button class="przycisk">WSTECZ</button></div></footer>');
-			}
-
-			function autor(){
-				$("#glowna").children().remove();
-				$("#glowna").html('<footer><div class="dprzycisk" id="wstecz" onclick="wstecz()"><button class="przycisk">WSTECZ</button></div></footer>');
-			}
-
-			function wstecz(){
-				$("#glowna").children().remove();
-				$("#glowna").html('<div id="menu"><br><div class="dprzycisk" id="graj"><button class="przycisk" onclick="graj();">GRAJ</button></div><br><br><div class="dprzycisk" id="jak_grac" onclick="jak_grac()"><button class="przycisk">JAK GRAĆ</button></div><br><br><div class="dprzycisk"><button class="przycisk" id="autor" onclick="autor()">O AUTORZE</button></div><br><br><div class="dprzycisk"><button class="przycisk" id="aktualizacje" onclick="aktualizacja()">AKTUALIZACJA</button></div><br><br></div>');
-			}
-
-			function aktualizacja() {
-				$("#glowna").children().remove();
-				$("#glowna").html('<div id="menu"><div class="update"><div class="update_tytul">Update #0.0.0 <p class="data">29 maj 2018</p></div><br><div class="update_info">Rozpoczęcie pracy nad grą. Tworzenie menu.</div></div><footer><div class="dprzycisk" id="wstecz" onclick="wstecz()"><button class="przycisk">WSTECZ</button></div></footer></div>');
-		}
-			
-
-	</script>
+	<script type="text/javascript" src="./js/skrypty.js"></script>
 </head>
 <body>
 	<div id="glowna">
