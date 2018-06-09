@@ -66,7 +66,9 @@ div#glowna{
 
 div#menu{
 	float: bottom;
-	background-color: rgba(105,105,105,0.5);
+	background-color: rgba(105,105,105,0.65);
+	width: 800px;
+	height: 480px;
 }
 
 .dprzycisk{
@@ -106,17 +108,44 @@ div#menu{
 }
 
 .update{
-
+	padding: 0;
+	margin: 0;
 }
 
-.upadate_tytul{
-
+.update_tytul{
+	padding: 0;
+	margin: 0;
+	color: rgb(255,255,255);
+	font-family: 'BioRhyme Expanded', serif;
+	font-size: 20px;
 }
 
 .data{
-	
+	padding: 0;
+	margin: 0;
+	font-style: italic;
+	color: rgb(255,255,255);
+	font-size: 10px;
 }
 
 .update_info{
+	padding: 0;
+	margin: 0;
+	color: rgb(255,255,255);
+	font-size: 15px;
 
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+}
+
+hr{
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(255,255,255);
+    margin: 1em 0;
+    padding: 0; 
 }

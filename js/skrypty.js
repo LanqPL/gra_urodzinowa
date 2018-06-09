@@ -24,5 +24,5 @@ function wstecz(){
 
 function aktualizacja() {
 	$("#glowna").children().remove();
-		$("#glowna").html('<div id="menu"><div class="update"><div class="update_tytul">Update #0.0.0 <p class="data">29 maj 2018</p></div><br><div class="update_info">Rozpoczęcie pracy nad grą. Tworzenie menu.</div></div><footer><div class="dprzycisk" id="wstecz" onclick="wstecz()"><button class="przycisk">WSTECZ</button></div></footer></div>');
+		$("#glowna").html('<div id="menu"><div class="update"><div class="update_tytul">Update #0.0.0</div><p class="data">29 maj 2018</p><div class="update_info">Rozpoczęcie pracy nad grą. Tworzenie menu.</div><hr/></div><footer><div class="dprzycisk" id="wstecz" onclick="wstecz()"><button class="przycisk">WSTECZ</button></div></footer></div>');
 	}
