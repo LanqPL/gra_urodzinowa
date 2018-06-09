@@ -9,12 +9,12 @@ function graj(){
 
 function jak_grac(){
 	$("#glowna").children().remove();
-		$("#glowna").html('<footer><div class="dprzycisk" id="wstecz" onclick="wstecz()"><button class="przycisk">WSTECZ</button></div></footer>');
+		$("#glowna").html('<div id="menu"><br><div id="jak_grac">W - skok<br>A, D - porusznie się lewo/prawo</div></div><footer><div class="dprzycisk" id="wstecz" onclick="wstecz()"><button class="przycisk">WSTECZ</button></div></footer>');
 	}
 
 function autor(){
 	$("#glowna").children().remove();
-		$("#glowna").html('<div id="menu"><div class="autor_info_tytul">Grafika:</div><div class="autor_info">Kacper Kawala</div><br><div class="autor_info_tytul">Projekt:</div><div class="autor_info">Kacper Kawala</div><br><div class="autor_info_tytul">Programowanie:</div><div class="autor_info">Kacper Kawala</div><br><div class="autor_info_tytul">Podziękowanie dla testera:</div><div class="autor_info">Paulina Pacyniak <br>Kacper Kawala</div></div><footer><div class="dprzycisk" id="wstecz" onclick="wstecz()"><button class="przycisk">WSTECZ</button></div></footer>');
+		$("#glowna").html('<div id="menu"><div class="autor_info_tytul">Grafika:</div><div class="autor_info">Kacper Kawala</div><br><div class="autor_info_tytul">Projekt:</div><div class="autor_info">Kacper Kawala</div><br><div class="autor_info_tytul">Programowanie:</div><div class="autor_info">Kacper Kawala</div><br><div class="autor_info_tytul">Podziękowanie dla testerów:</div><div class="autor_info">Paulina Pacyniak <br>Kacper Kawala</div></div><footer><div class="dprzycisk" id="wstecz" onclick="wstecz()"><button class="przycisk">WSTECZ</button></div></footer>');
 	}
 
 function wstecz(){
