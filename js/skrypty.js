@@ -9,7 +9,7 @@ function graj(){
 
 function jak_grac(){
 	$("#glowna").children().remove();
-		$("#glowna").html('<div id="menu"><br><div id="jak_grac">W - skok<br>A, D - porusznie się lewo/prawo</div></div><footer><div class="dprzycisk" id="wstecz" onclick="wstecz()"><button class="przycisk">WSTECZ</button></div></footer>');
+		$("#glowna").html('<div id="menu"><br><div id="jak_grac">W - skok<br>A, D - porusznie się lewo/prawo<br/><br/> Zbieraj bambusy, to są twoje punkty. Pamiętaj, że na mapie są różne niebezpieczeństwa, które mogą zrobić ci krzywdę.</div></div><footer><div class="dprzycisk" id="wstecz" onclick="wstecz()"><button class="przycisk">WSTECZ</button></div></footer>');
 	}
 
 function autor(){
