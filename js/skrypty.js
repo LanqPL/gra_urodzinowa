@@ -5,6 +5,7 @@ $(function(){
 function graj(){
 	$("#glowna").children().remove();
 		$("#glowna").html('<canvas id="plotno"></canvas>');
+	game_sterowanie();
 	}
 
 function jak_grac(){
