@@ -4,8 +4,9 @@ function game_sterowanie(){
 
 		function preload() {
 			game.load.image('sky', 'zdjecia/sky.png');
-			ggame.load.image('star', 'modele/star.png');
-			game.load.image('diamond', 'modele/diamond.png')
+			game.load.image('star', 'modele/star.png');
+			game.load.image('diamond', 'modele/diamond.png');
+			game.load.image('');
 		}
 
 		function create() {
@@ -21,4 +22,3 @@ function game_sterowanie(){
 		preload();
 	},500);	
 }
-
