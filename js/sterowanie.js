@@ -2,11 +2,8 @@ function game_sterowanie(){
 
 	setTimeout(function(){
 	
-		var canvas = document.getElementById('plutno');
-		canvas.width = 800;
-		canvas.height = 600;
-		var c = canvas.getContext('2d');
-
+		var game = new Phaser.Game(800, 600, Phaser.AUTO, '', {preload: preload, create: create, update: update});
+		
 		var player;
 		var platforms;
 		var cursors;
@@ -15,12 +12,12 @@ function game_sterowanie(){
 		var score = 0;
 		var scoreText;
 
-		function preload() {
-			game.load.image('sky', 'zdjecia/sky.png');
-			game.load.image('star', 'modele/star.png');
-			game.load.image('diamond', 'modele/diamond.png');
-			game.load.image('dude', 'modele/baddie.jpg');
-			game.load.image('ground', 'assets/platform.png');
+		function preload(){
+			game.load.image('sky','zdjecia/sky.png');
+			game.load.image('star','modele/star.png');
+			game.load.image('diamond','modele/diamond.png');
+			game.load.image('player','modele/baddie.jpg');
+			game.load.image('ground','modele/platform.png');
 		}
 
 		function create() {
@@ -45,7 +42,7 @@ function game_sterowanie(){
 		    ledge = platforms.create(-150, 250, 'ground');
 		    ledge.body.immovable = true;
 
-		    player = game.add.sprite(32, game.world.height - 150, 'dude');
+		    player = game.add.sprite(32, game.world.height - 150, 'player');
 
 		    game.physics.arcade.enable(player);
 
