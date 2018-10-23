@@ -2,8 +2,19 @@ function game_sterowanie(){
 
 	setTimeout(function(){
 	
-		var game = new Phaser.Game(800, 600, Phaser.AUTO, '', {preload: preload, create: create, update: update});
-		
+		var config = {
+		    type: Phaser.CANVAS,
+		    width: 800,
+		    height: 600,
+		    scene: {
+		        preload: preload,
+ 		    	create: create,
+		        update: update
+    			}
+		};
+
+		var game = new Phaser.Game(config);
+
 		var player;
 		var platforms;
 		var cursors;
@@ -13,11 +24,11 @@ function game_sterowanie(){
 		var scoreText;
 
 		function preload(){
-			game.load.image('sky','zdjecia/sky.png');
-			game.load.image('star','modele/star.png');
-			game.load.image('diamond','modele/diamond.png');
-			game.load.image('player','modele/baddie.jpg');
-			game.load.image('ground','modele/platform.png');
+			this.load.image('sky','zdjecia/sky.png');
+			this.load.image('star','modele/star.png');
+			this.load.image('diamond','modele/diamond.png');
+			this.load.image('player','modele/baddie.jpg');
+			this.load.image('ground','modele/platform.png');
 		}
 
 		function create() {
