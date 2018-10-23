@@ -27,12 +27,12 @@ function game_sterowanie(){
 			this.load.image('sky','zdjecia/sky.png');
 			this.load.image('star','modele/star.png');
 			this.load.image('diamond','modele/diamond.png');
-			this.load.image('player','modele/baddie.jpg');
 			this.load.image('ground','modele/platform.png');
+			this.load.spritesheet('player','modele/baddie.jpg',{ frameWidth: 32, frameHeight: 48 });
 		}
 
 		function create() {
-
+			/*
 		    game.physics.startSystem(Phaser.Physics.ARCADE);
 
 		    game.add.sprite(0, 0, 'sky');
@@ -77,11 +77,11 @@ function game_sterowanie(){
 		    scoreText = game.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
 
 		    cursors = game.input.keyboard.createCursorKeys();
-		    
+		    */
 		}
 
 		function update() {
-
+			/*
 		    game.physics.arcade.collide(player, platforms);
 		    game.physics.arcade.collide(stars, platforms);
 
@@ -107,20 +107,20 @@ function game_sterowanie(){
 			    if(cursors.up.isDown && player.body.touching.down){
 			    	player.body.velocity.y = -350;
 				}
-		
+		*/
 		}
 
-		function collectStar (player, star) {
+		/*function collectStar (player, star) {
 		    star.kill();
 		    score += 10;
 		    scoreText.text = 'Score: ' + score;
 		
-		}
+		}*/
 
 		
 
 
-	preload();
+	//preload();
 
 	
 
