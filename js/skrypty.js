@@ -4,7 +4,7 @@ $(function(){
 
 function graj(){
 	$("#glowna").children().remove();
-		$("#glowna").html('<canvas id="plotno"></canvas>');
+		$("#glowna").html('<iframe src="../gra.html"></iframe>');
 	game_sterowanie();
 	}
 
