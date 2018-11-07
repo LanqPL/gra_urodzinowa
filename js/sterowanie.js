@@ -1,17 +1,24 @@
-function game_sterowanie(){
+//function game_sterowanie(){
 
 	setTimeout(function(){
 	
-		var config = {
-		    type: Phaser.CANVAS,
-		    width: 800,
-		    height: 600,
-		    scene: {
-		        preload: preload,
- 		    	create: create,
-		        update: update
-    			}
-		};
+	var config = {
+	    type: Phaser.AUTO,
+    	width: 800,
+	    height: 600,
+   		physics: {
+        default: 'arcade',
+        arcade: {
+            gravity: { y: 300 },
+            debug: false
+        		}
+    	},
+    	scene: {
+        	preload: preload,
+        	create: create,
+        	update: update
+    	}
+	};
 
 		var game = new Phaser.Game(config);
 
@@ -32,26 +39,18 @@ function game_sterowanie(){
 		}
 
 		function create() {
+			this.add.image(400, 300, 'sky');
+
+    		platforms = this.physics.add.staticGroup();
+
+    		platforms.create(400, 568, 'ground').setScale(2).refreshBody();
+
+    		platforms.create(600, 400, 'ground');
+    		platforms.create(50, 250, 'ground');
+    		platforms.create(750, 220, 'ground');
+			
+
 			/*
-		    game.physics.startSystem(Phaser.Physics.ARCADE);
-
-		    game.add.sprite(0, 0, 'sky');
-
-		    platforms = game.add.group();
-
-		    platforms.enableBody = true;
-
-		    var ground = platforms.create(0, game.world.height - 64, 'ground');
-
-		    ground.scale.setTo(2, 2);
-
-		    ground.body.immovable = true;
-
-		    var ledge = platforms.create(400, 400, 'ground');
-		    ledge.body.immovable = true;
-
-		    ledge = platforms.create(-150, 250, 'ground');
-		    ledge.body.immovable = true;
 
 		    player = game.add.sprite(32, game.world.height - 150, 'player');
 
@@ -125,4 +124,4 @@ function game_sterowanie(){
 	
 
 	},500);	
-}
+//}
