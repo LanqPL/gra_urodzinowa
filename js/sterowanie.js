@@ -1,11 +1,11 @@
 //function game_sterowanie(){
 
-	setTimeout(function(){
+	//setTimeout(function(){
 	
 	var config = {
 	    type: Phaser.AUTO,
-    	width: 800,
-	    height: 600,
+    	width: 790,
+	    height: 470,
    		physics: {
         default: 'arcade',
         arcade: {
@@ -39,7 +39,7 @@
 		}
 
 		function create() {
-			this.add.image(400, 300, 'sky');
+			this.add.image(345, 235, 'sky');
 
     		platforms = this.physics.add.staticGroup();
 
@@ -109,6 +109,8 @@
 		*/
 		}
 
+		create();
+
 		/*function collectStar (player, star) {
 		    star.kill();
 		    score += 10;
@@ -123,5 +125,5 @@
 
 	
 
-	},500);	
+	//},500);	
 //}
